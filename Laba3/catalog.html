@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/catalog-style.css">
+    <link rel="shortcut icon" href="./assets/svg/favicon.ico">
+    <title>Vinylere</title>
+
+</head>
+
+<body onload="displayRecords()">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a href="./main.html" class="logo">Vinylere</a>
+                <nav class="navigation">
+                    <ul class="nav__list">
+                        <li class="list__item"><a href="">Виниловые пластинки</a></li>
+                        <li class="list__item"><a href="./developing.html">О нас</a></li>
+                        <li class="list__item"><a href="./developing.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__container">
+                <section class="greeting">
+                    <div class="greeting__container">
+                        <div class="catalog__image"></div>
+                        <div class="greeting__text">
+                            <h1>Виниловые пластинки</h1>
+                            <p>Выбери свою пластинку</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="records">
+                    <div class="records__container">
+                        <div class="records-inner__container">
+                            <div class="filter__block">
+                                <div class="filters">
+                                    <form class="search">
+                                        <img src="./assets/svg/search.svg" alt="Loupe">
+                                        <input class="input-search" type="text" placeholder="поиск">
+                                    </form>
+                                    <div class="sort__by__genre">
+                                        <img class="clean-genre" src="./assets/svg/cross.svg" alt="Cross Icon">
+                                        <div class="genre-btn">
+                                            <span class="ganre-span">Жанр</span>
+                                            <img class="list__arrow genre-arrow" src="./assets/svg/listArrow.svg"
+                                                alt="List Arrow">
+                                        </div>
+                                        <ul class="genre__list"></ul>
+                                    </div>
+                                    <div class="sord__by__price">
+                                        <img class="clean-price" src="./assets/svg/cross.svg" alt="Cross Icon">
+                                        <div class="price-btn">
+                                            <span>Цена</span>
+                                            <img class="list__arrow price-arrow" src="./assets/svg/listArrow.svg"
+                                                alt="List Arrow">
+                                        </div>
+                                        <div class="input-price">
+                                            <div class="input-price__container">
+                                                <input class="lower-price" type="number">
+                                                <div class="line"></div>
+                                                <input class="upper-price" type="number">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sort__by__year">
+                                        <img class="clean-year" src="./assets/svg/cross.svg" alt="Cross Icon">
+                                        <div class="year-btn">
+                                            <span class="year-span">Год выхода альбома</span>
+                                            <img class="list__arrow year-arrow" src="./assets/svg/listArrow.svg"
+                                                alt="List Arrow">
+                                        </div>
+                                        <ul class="year__list"></ul>
+                                    </div>
+                                </div>
+                                <div class="order__sort">
+                                    <span>порядок:</span>
+                                    <span>по умолчанию</span>
+                                    <img class="list__arrow" src="./assets/svg/listArrow.svg" alt="List Arrow">
+                                </div>
+                            </div>
+                            <div class="records__block"></div>
+                        </div>
+                        <div class="basket-btn">
+                            <div class="indicator"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="first__block">
+                    <p class="footer__logo">vinylere</p>
+                    <div class="social__networks">
+                        <div class="instagram"></div>
+                        <div class="facebook"></div>
+                        <div class="vk"></div>
+                    </div>
+                    <p class="phone__number">+375 (44) 799-89-77</p>
+                    <p class="address">Минск, пр. Независимости 13</p>
+                    <p class="work__time">ПН-ВС 10:00-19:00</p>
+                </div>
+                <div class="second__block">
+                    <p class="footer__block__title">О нас</p>
+                    <ul class="about__us__list">
+                        <li class="footer__list__item">о нас</li>
+                        <li class="footer__list__item">контакты</li>
+                    </ul>
+                </div>
+                <div class="third__block">
+                    <p class="footer__block__title">Информация</p>
+                    <ul class="information__list">
+                        <li class="footer__list__item">доставка</li>
+                        <li class="footer__list__item">оплата</li>
+                        <li class="footer__list__item">возврат, обмен и гарантии</li>
+                        <li class="footer__list__item">договор публичной оферты</li>
+                        <li class="footer__list__item">политика конфиденциальности</li>
+                    </ul>
+                </div>
+                <div class="fourth__block">
+                    <p class="footer__block__title">Специальные предложения</p>
+                    <p class="footer__list__item">подарочные сертификаты</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="overlay">
+        <div class="overlay-container">
+            <div class="basket__container">
+                <div class="basket-header">
+                    <h2>Ваш заказ</h2>
+                    <img class="close-basket" src="./assets/svg/cross.svg" alt="Cross Icon">
+                </div>
+                <div class="basket-items">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/catalog.js"></script>
+</body>
+
+</html>
